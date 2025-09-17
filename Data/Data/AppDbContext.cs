@@ -12,8 +12,8 @@ namespace Data.Data
     {
        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-        internal DbSet<User> Users { get; set; }
-        internal DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
